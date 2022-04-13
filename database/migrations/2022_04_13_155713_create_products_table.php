@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('kategori');
             $table->integer('harga');
             $table->string('gambar');
-            $table->string('deskripsi');
+            $table->text('deskripsi');
             $table->integer('stok');
             $table->string('ukuran');
             $table->string('warna');
