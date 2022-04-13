@@ -16,15 +16,24 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                'nama' => 'Baju',
-                'slug' => 'baju',
-                'kategori' => 'Baju',
-                'harga' => '10000',
+                'nama' => 'Kemeja Pria Koko Panjang Coklat 2288A',
+                'slug' => 'kemeja-pria-koko-panjang',
+                'kategori' => 'Pakaian Pria',
+                'harga' => '169000',
                 'gambar' => 'baju.jpg',
-                'deskripsi' => 'baju',
-                'stok' => 10,
-                'ukruan' => 'xl',
-                'warna' => 'merah',
+                'deskripsi' => 'Material: Katun
+                Size pada Model:
+                Pria: Tinggi 185-186 cm, Berat 75 kg, Menggunakan Ukuran L
+                Garment care:
+                1. Cuci dengan air suhu dibawah 40 derajat celcius
+                2. Cuci dengan warna yang senada
+                3. Jangan menggunakan pemutih
+                4. Setrika dengan suhu sedang
+                5. Cuci dengan membalikan luar-dalam pakaian.
+                ',
+                'stok' => 100,
+                'ukruan' => 'L',
+                'warna' => 'Coklat',
             ],
         ]);
     }
