@@ -19,8 +19,8 @@ class ProductSeeder extends Seeder
                 'nama' => 'Kemeja Pria Koko Panjang Coklat 2288A',
                 'slug' => 'kemeja-pria-koko-panjang',
                 'kategori' => 'Pakaian Pria',
-                'harga' => '169000',
-                'gambar' => 'baju.jpg',
+                'harga' => 169000,
+                'gambar' => 'img/product/kemejapriakoko.jpg',
                 'deskripsi' => 'Material: Katun
                 Size pada Model:
                 Pria: Tinggi 185-186 cm, Berat 75 kg, Menggunakan Ukuran L
@@ -32,8 +32,39 @@ class ProductSeeder extends Seeder
                 5. Cuci dengan membalikan luar-dalam pakaian.
                 ',
                 'stok' => 100,
-                'ukruan' => 'L',
+                'ukuran' => 'L',
                 'warna' => 'Coklat',
+            ],
+            [
+                'nama' => 'Russ Chino Pants Suspect Black',
+                'slug' => 'Russ-Chino-Pants',
+                'kategori' => 'Celana Pria',
+                'harga' => 149000,
+                'gambar' => 'img/product/RussChinoPants.jpg',
+                'deskripsi' => 'Celana chinos basic bergaya kasual 
+                - Regular fit 
+                - Kancing dan resleting depan 
+                - 2 kantong depan dan belakang 
+                - Material katun twill, ringan, stretch
+                ',
+                'stok' => 200,
+                'ukuran' => 'L',
+                'warna' => 'Hitam',
+            ],
+            [
+                'nama' => 'HIJAB BELLA SQUARE',
+                'slug' => 'HIJAB-BELLA-SQUARE',
+                'kategori' => 'Hijab',
+                'harga' => 10500,
+                'gambar' => 'img/product/HIJAB-BELLA.jpg',
+                'deskripsi' => 'Bahan POLLY CATTON = DOUBLE HYCON
+                Uk.110 x 110 cm
+                1 kg muat 16 pcs
+                Hijab di Neci tepi 😍
+                Hijab yang lagi hits banget , yang suka di pake teh bell 😍',
+                'stok' => 99,
+                'ukuran' => '110x110',
+                'warna' => 'Navy',
             ],
         ]);
     }
