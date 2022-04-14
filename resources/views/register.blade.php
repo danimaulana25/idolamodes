@@ -29,43 +29,67 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Register</h1>
                   </div>
-                  <form>
+                  <form action="/register" method="POST">
+                    @csrf
                     <div class="form-group">
-                      <label>First Name</label>
-                      <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter First Name">
+                      <label>Name</label>
+                      <input type="text" name="name" class="form-control @error('name')
+                        is-invalid
+                    @enderror" id="exampleInputFirstName" placeholder="Enter First Name" value="{{ old('name') }}">
+                      @error('name')
+                      <div class="invalid-feedback">
+                        {{ $message }}
+                      </div>
+                      @enderror
                     </div>
                     <div class="form-group">
-                      <label>Last Name</label>
-                      <input type="text" class="form-control" id="exampleInputLastName" placeholder="Enter Last Name">
+
+                      <input type="hidden" name="role" class="form-control @error('role')
+                        is-invalid
+                    @enderror" placeholder="Enter First role" value="user">
+                      @error('role')
+                      <div class="invalid-feedback">
+                        {{ $message }}
+                      </div>
+                      @enderror
                     </div>
                     <div class="form-group">
                       <label>Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
-                        placeholder="Enter Email Address">
+                      <input type="email" name="email" class="form-control @error('email')
+                        is-invalid
+                    @enderror" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address"
+                        value="{{ old('email') }}">
+                      @error('email')
+                      <div class="invalid-feedback">
+                        {{ $message }}
+                      </div>
+                      @enderror
                     </div>
                     <div class="form-group">
                       <label>Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                      <label>Repeat Password</label>
-                      <input type="password" class="form-control" id="exampleInputPasswordRepeat"
-                        placeholder="Repeat Password">
+                      <input type="password" name="password" class="form-control @error('password')
+                        is-invalid
+                    @enderror" id="exampleInputPassword" placeholder="Password">
+                      @error('password')
+                      <div class="invalid-feedback">
+                        {{ $message }}
+                      </div>
+                      @enderror
                     </div>
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn-block">Register</button>
                     </div>
-                    <hr>
+                    {{-- <hr>
                     <a href="index.html" class="btn btn-google btn-block">
                       <i class="fab fa-google fa-fw"></i> Register with Google
                     </a>
                     <a href="index.html" class="btn btn-facebook btn-block">
                       <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                    </a>
+                    </a> --}}
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="font-weight-bold small" href="login.html">Already have an account?</a>
+                    <a class="font-weight-bold small" href="/login">Already have an account?</a>
                   </div>
                   <div class="text-center">
                   </div>

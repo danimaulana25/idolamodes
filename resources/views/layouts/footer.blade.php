@@ -4,7 +4,7 @@
             <span>copyright &copy; <script>
                     document.write(new Date().getFullYear()); 
                 </script> - developed by
-                <b><a href="https://indrijunanda.gitlab.io/" target="_blank">indrijunanda</a></b>
+                <b><a href="https://indrijunanda.gitlab.io/" target="_blank">Ahamd Dhani Maulana</a></b>
             </span>
         </div>
     </div>
@@ -14,7 +14,7 @@
             <span>copyright &copy; <script>
                     document.write(new Date().getFullYear()); 
                 </script> - distributed by
-                <b><a href="https://themewagon.com/" target="_blank">themewagon</a></b>
+                <b><a href="https://themewagon.com/" target="_blank">Muhammad Rizki Mubarok</a></b>
             </span>
         </div>
     </div>

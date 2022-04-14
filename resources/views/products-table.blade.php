@@ -58,7 +58,6 @@
                                 </td>
                             </tr>
                             @endforeach
-
                         </tbody>
                     </table>
                 </div>
@@ -68,7 +67,9 @@
     </div>
     <!--Row-->
 
-    <!-- Modal Logout -->
+    <div class="d-flex justify-content-lg-center">
+        {{ $products->links() }}
+    </div>
 
 
 </div>
