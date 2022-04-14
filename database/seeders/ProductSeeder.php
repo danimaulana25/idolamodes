@@ -130,11 +130,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'House of Smith Long Cargo Pants',
                 'slug' => 'House-of-Smith',
-<<<<<<< HEAD
-                'kategori' => 'Celana',
-=======
                 'category_id' => 2,
->>>>>>> 600e5b4d5e6a278cc2250c56d6a8ba3cdddaa729
                 'harga' => 160000,
                 'gambar' => 'img/product/House-of-Smith.jpg',
                 'deskripsi' => 'Warna yang terlihat pada gambar mungkin tidak 100% sama dengan produk yang
