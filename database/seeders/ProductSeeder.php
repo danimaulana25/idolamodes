@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'Russ Chino Pants Suspect Black',
                 'slug' => 'Russ-Chino-Pants',
-                'kategori' => 'Celana Chino',
+                'kategori' => 'Celana',
                 'harga' => 149000,
                 'gambar' => 'img/product/RussChinoPants.jpg',
                 'deskripsi' => 'Celana chinos basic bergaya kasual 
@@ -130,7 +130,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'House of Smith Long Cargo Pants',
                 'slug' => 'House-of-Smith',
-                'kategori' => 'Celana Cargo',
+                'kategori' => 'Celana',
                 'harga' => 160000,
                 'gambar' => 'img/product/House-of-Smith.jpg',
                 'deskripsi' => 'Warna yang terlihat pada gambar mungkin tidak 100% sama dengan produk yang
