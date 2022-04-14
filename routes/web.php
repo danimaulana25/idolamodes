@@ -18,16 +18,13 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::post('/login', [LoginController::class, 'authenticate']);
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('index');
 })->middleware('auth');
 Route::post('/logout', [LoginController::class, 'logout']);
