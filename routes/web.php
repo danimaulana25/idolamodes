@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\RegisterController;
 
 /*
@@ -31,3 +32,4 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::resource('/user', UserController::class);
 Route::resource('/product', ProductController::class);
+Route::resource('/category', CategoryController::class);

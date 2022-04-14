@@ -18,7 +18,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'Kemeja Pria Koko Panjang Coklat 2288A',
                 'slug' => 'kemeja-pria-koko-panjang',
-                'kategori' => 'Baju koko',
+                'category_id' => 1,
                 'harga' => 169000,
                 'gambar' => 'img/product/kemejapriakoko.jpg',
                 'deskripsi' => 'Material: Katun
@@ -38,7 +38,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'Russ Chino Pants Suspect Black',
                 'slug' => 'Russ-Chino-Pants',
-                'kategori' => 'Celana Chino',
+                'category_id' => 2,
                 'harga' => 149000,
                 'gambar' => 'img/product/RussChinoPants.jpg',
                 'deskripsi' => 'Celana chinos basic bergaya kasual 
@@ -54,7 +54,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'HIJAB BELLA SQUARE',
                 'slug' => 'HIJAB-BELLA-SQUARE',
-                'kategori' => 'Hijab',
+                'category_id' => 3,
                 'harga' => 10500,
                 'gambar' => 'img/product/HIJAB-BELLA.jpg',
                 'deskripsi' => 'Bahan POLLY CATTON = DOUBLE HYCON
@@ -69,7 +69,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'DAUKY Atasan Wanita M Tunik Basic',
                 'slug' => 'DAUKY-Atasan-Wanita',
-                'kategori' => 'Tunik',
+                'category_id' => 3,
                 'harga' => 159000,
                 'gambar' => 'img/product/DAUKYTunikBasic.jpg',
                 'deskripsi' => 'M Tunik Basic mendukung aktivitas perempuan yang aktif. Dirancang menggunakan bahan katun paris yang nyaman digunakan untuk kegiatan di dalam maupun di luar ruangan. Memiliki berbagai fitur seperti wudhu friendly dan busui friendly ',
@@ -80,7 +80,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'TUNIK DZUVIA',
                 'slug' => 'TUNIK-DZUVIA',
-                'kategori' => 'Tunik',
+                'category_id' => 3,
                 'harga' => 45000,
                 'gambar' => 'img/product/TUNIK-DZUVIA.jpg',
                 'deskripsi' => '- Bahan yang di gunakan sangat nyaman dan enak saat di pakai.
@@ -95,7 +95,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'Clemira-Bergo-Sport',
                 'slug' => 'Clemira-Bergo-Sport',
-                'kategori' => 'Hijab',
+                'category_id' => 4,
                 'harga' => 15000,
                 'gambar' => 'img/product/Clemira-Bergo-Sport.jpg',
                 'deskripsi' => 'clemira bergo sport
@@ -109,7 +109,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'DGM Fashion Koko Kurta Pakistan Polos',
                 'slug' => 'DGM-Fashion-Koko',
-                'kategori' => 'Baju koko',
+                'category_id' => 1,
                 'harga' => 135000,
                 'gambar' => 'img/product/DGM-Fashion-Koko.jpg',
                 'deskripsi' => 'Merk : JUST 
@@ -130,7 +130,7 @@ class ProductSeeder extends Seeder
             [
                 'nama' => 'House of Smith Long Cargo Pants',
                 'slug' => 'House-of-Smith',
-                'kategori' => 'Celana Cargo',
+                'category_id' => 2,
                 'harga' => 160000,
                 'gambar' => 'img/product/House-of-Smith.jpg',
                 'deskripsi' => 'Warna yang terlihat pada gambar mungkin tidak 100% sama dengan produk yang

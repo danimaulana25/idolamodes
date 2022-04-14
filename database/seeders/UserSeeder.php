@@ -21,12 +21,14 @@ class UserSeeder extends Seeder
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('123'),
                 'role' => 'admin',
+                'foto' => 'img/profile/dani.jpeg',
             ],
             [
                 'name' => 'user',
                 'email' => 'user@gmail.com',
                 'password' => Hash::make('123'),
                 'role' => 'user',
+                'foto' => 'img/profile/dani.jpeg',
             ],
         ]);
     }

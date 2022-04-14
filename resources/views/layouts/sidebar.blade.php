@@ -27,6 +27,7 @@
                 <h6 class="collapse-header">Tables</h6>
                 <a class="collapse-item" href="/user">User Tables</a>
                 <a class="collapse-item" href="/product">Products Tables</a>
+                <a class="collapse-item" href="/category">Category Tables</a>
             </div>
         </div>
     </li>
