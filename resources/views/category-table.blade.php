@@ -23,35 +23,24 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>#</th>
-                                <th>Gambar</th>
                                 <th>Nama</th>
-                                <th>Kategori</th>
-                                <th>Harga</th>
-                                <th>Stok</th>
-                                <th>Warna</th>
+
                                 <th width="270px">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($products as $product)
+                            @foreach ($categories as $category)
                             <tr>
                                 <td>{{ $loop -> iteration }}</td>
-                                <td>
-                                    <img src="{{ asset( $product -> gambar) }}" alt="" height="100px">
-                                </td>
-                                <td>{{ $product -> nama }}</td>
-                                <td>{{ $product -> category -> nama }}</td>
-                                <td>Rp. {{ number_format($product -> harga) }}</td>
-                                <td>{{ $product -> stok }}</td>
-                                <td>{{ $product -> warna }}</td>
 
+                                <td>{{ $category -> nama }}</td>
                                 <td>
-                                    <form action="/product/{{ $product -> id }}" method="POST">
+                                    <form action="/category/{{ $category -> id }}" method="POST">
                                         @method('DELETE')
                                         @csrf
-                                        <a href="/product/{{ $product -> id }}"
+                                        <a href="/category/{{ $category -> id }}"
                                             class="btn btn-sm btn-primary">Detail</a>
-                                        <a href="/product/{{ $product -> id }}/edit"
+                                        <a href="/category/{{ $category -> id }}/edit"
                                             class="btn btn-sm btn-warning">Edit</a>
                                         <button type="submit" class="btn btn-sm btn-danger"> Delete</button>
                                     </form>
@@ -68,7 +57,7 @@
     <!--Row-->
 
     <div class="d-flex justify-content-lg-center">
-        {{ $products->links() }}
+        {{ $categories->links() }}
     </div>
 
 

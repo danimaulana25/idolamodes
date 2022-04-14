@@ -43,8 +43,8 @@
                       @enderror
                     </div>
                     <div class="form-group">
-
-                      <input type="hidden" name="role" class="form-control @error('role')
+                      <label for="">Role</label>
+                      <input type="text" name="role" class="form-control @error('role')
                         is-invalid
                     @enderror" placeholder="Enter First role" value="user">
                       @error('role')
